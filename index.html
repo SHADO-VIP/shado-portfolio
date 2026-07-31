@@ -4,38 +4,347 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SHADO Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <h1>SHADO Portfolio</h1>
-        <p>I build AI-powered digital products that combine technology, creativity, and storytelling.</p>
+    <!-- Hero Section -->
+    <header class="hero">
+
+        <nav class="navbar">
+
+            <h1 class="logo"><span>SHADO</span> STUDIO</h1>
+
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="hero-content">
+
+            <div class="hero-text">
+
+                <p class="eyebrow">AI Creative Developer</p>
+
+                <h2>
+                    Building AI-powered digital products
+                    that combine technology, and creativity
+                </h2>
+
+                <p class="hero-description">
+                    Building modern AI solutions, web experiences, and creative digital products
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects">View Projects</a>
+                    <a href="#contact">Contact Me</a>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+                <img src="assets/images/hero-image.png" alt="SHADO STUDIO" class="hero-image">
+            </div>
+
+        </div>
+
+        </div>
+
     </header>
 
     <main>
         <!-- About Section -->
-        <section>
-            <h2>About Me</h2>
-            <p>I am passionate about building AI-powered solutions, creating digital experiences, and producing
-                high-quality multimedia content.</p>
+        <section class="about" id="about">
+
+            <div class="about-image">
+                <img src="assets/images/profile.png" alt="Profile">
+            </div>
+
+            <div class="about-content">
+
+                <span class="section-tag">
+                    ABOUT ME
+                </span>
+
+                <h2 class="section-title">
+                    AI Developer & Multimedia Creator
+                </h2>
+
+                <p class="section-description">
+                    I'm passionate about Artificial Intelligence, Web Development, and Multimedia Design. I enjoy
+                    building modern digital experiences, AI-powered applications, creative videos, and innovative
+                    solutions that combine technology with creativity
+                </p>
+
+                <div class="about-buttons">
+                    <a href="#projects" class="primary-btn">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="secondary-btn">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
         </section>
-        <!-- Skills Section -->
-        <section>
-            <h2>Skills</h2>
-        </section>
-        <!-- Projects Section -->
-        <section>
-            <h2>Projects</h2>
-        </section>
-        <!-- Contact Section -->
-        <section>
-            <h2>Contact</h2>
+        <section class="skills" id="skills">
+            <div class="container">
+
+                <span class="section-tag">MY SKILLS</span>
+
+                <h2 class="section-title">
+                    Technologies & Tools
+                </h2>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">HTML5</div>
+                    <div class="skill-card">CSS3</div>
+                    <div class="skill-card">JavaScript</div>
+                    <div class="skill-card">Git & GitHub</div>
+                    <div class="skill-card">AI Tools</div>
+                    <div class="skill-card">Prompt Engineering</div>
+                    <div class="skill-card">Video Editing</div>
+                    <div class="skill-card">UI / UX</div>
+
+                </div>
+            </div>
+
         </section>
 
+        <section class="projects" id="projects">
+            <div class="container">
+
+                <span class="section-tag">MY PROJECTS</span>
+
+                <h2 class="section-title">
+                    A collection of creative projects
+                </h2>
+
+
+                <div class="projects-grid">
+
+                    <div class="project-card">
+
+
+                        <div class="project-content">
+                            <span class="project-badge web">WEB</span>
+                            <h3>SHADO Portfolio</h3>
+
+                            <p>
+                                Personal portfolio built with HTML & CSS
+                            </p>
+
+                            <a href="#">View Project <span>→</span></a>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card featured-project">
+
+                        <div class="project-content">
+
+                            <span class="project-badge ai">FEATURED</span>
+
+                            <h3>Prompt Director</h3>
+
+                            <p>
+                                AI-powered web application that transforms simple ideas
+                                into structured prompts for AI creative tools.
+                            </p>
+
+                            <p class="project-tech">
+                                JavaScript • Node.js • Express.js • Gemini API
+                            </p>
+
+                            <div class="project-links">
+
+                                <a href="https://prompt-director.onrender.com/" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="link-icon">↗</span>
+                                    Live Demo
+                                </a>
+
+                                <a href="https://github.com/SHADO-VIP/prompt-director" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <span class="link-icon">&lt;/&gt;</span>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+<div class="project-card featured-project">
+
+    <div class="project-content">
+
+        <span class="project-badge ai">FEATURED</span>
+
+        <h3>VeriFact AI</h3>
+
+        <p>
+            Bilingual AI-powered web application that helps users
+            evaluate text, images, and videos through structured
+            content analysis reports.
+        </p>
+
+        <p class="project-tech">
+            JavaScript • Node.js • Express.js • Gemini AI • Redis
+        </p>
+
+        <div class="project-links">
+
+            <a href="https://verifact-ai-xhn5.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <span class="link-icon">↗</span>
+                Live Demo
+            </a>
+
+            <a href="https://github.com/SHADO-VIP/verifact-ai"
+                target="_blank"
+                rel="noopener noreferrer">
+                <span class="link-icon">&lt;/&gt;</span>
+                GitHub
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+                    <div class="project-card">
+
+                        <div class="project-content">
+                            <span class="project-badge ai">AI</span>
+                            <h3>AI Studio</h3>
+
+                            <p>
+                                AI-powered video creation platform
+                            </p>
+
+                            <a href="#">Coming Soon <span>→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+
+
+                        <div class="project-content">
+                            <span class="project-badge soon">QP</span>
+                            <h3>Quran Platform</h3>
+
+                            <p>
+                                Generate nature videos with Quran
+                            </p>
+
+                            <a href="#">Coming Soon <span>→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<section class="project-walkthrough" id="verifact-ai-demo">
+
+    <div class="container">
+
+        <span class="section-tag">
+            FEATURED PROJECT
+        </span>
+
+        <h2 class="section-title">
+            VeriFact AI
+        </h2>
+
+        <p class="walkthrough-description">
+            See how VeriFact AI analyzes text, images, and videos
+            to produce a structured, AI-assisted content analysis report.
+        </p>
+
+        <div class="walkthrough-video">
+
+            <video controls preload="metadata">
+
+                <source
+                    src="assets/videos/verifact-ai-demo.mp4"
+                    type="video/mp4"
+                >
+
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
+<section class="project-walkthrough" id="prompt-director-demo">
+            <div class="container">
+                <span class="section-tag">
+                   FEATURED PROJECT
+                </span>
+                <h2 class="section-title">
+                    Prompt Director
+                </h2>
+                <p class="walkthrough-description">
+                    See how Prompt Director transforms simple ideas into structured, production-ready AI prompts through
+                    a clean and intuitive workflow
+                </p>
+                <div class="walkthrough-video">
+                    <video controls preload="metadata">
+                        <source src="assets/videos/prompt-director-demo.mp4" type="video/mp4">
+
+                        Your browser does not support the video tag
+                    </video>
+                </div>
+            </div>
+</section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <span class="section-tag">CONTACT</span>
+                <h2 class="section-title">
+                    Turning creative ideas into impactful digital experiences
+                </h2>
+                <p class="section-description">
+                    Let's build something extraordinary together
+                </p>
+                <div class="contact-links">
+
+                    <a href="mailto:shadia.vip78@gmail.com" class="contact-card">
+                        📧 Email
+                    </a>
+
+                    <a href="https://github.com/SHADO-VIP/" target="_blank" class="contact-card">
+                        💻 GitHub
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/shadia-sarhan-36550823a/" target="_blank" class="contact-card">
+                        💼 LinkedIn
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2026 SHADO STUDIO. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 SHADO STUDIO. All Rights Reserved</p>
+        </div>
     </footer>
 </body>
 
