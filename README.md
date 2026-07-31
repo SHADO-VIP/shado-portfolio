@@ -126,8 +126,12 @@ portfolio/
 
 # 📸 Screenshots
 
-Coming Soon
 
+<p align="center">
+  <img src="assets/images/portfolio-preview.png"
+       alt="SHADO Portfolio Preview"
+       width="100%">
+</p>
 ---
 
 # 🎯 Roadmap
