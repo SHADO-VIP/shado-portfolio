@@ -16,7 +16,8 @@ A modern personal portfolio showcasing my experience in Artificial Intelligence,
 
 # 🚀 Live Demo
 
-Coming Soon
+🌐 **View the live portfolio:**
+[https://shado-portfolio.vercel.app](https://shado-portfolio.vercel.app)
 
 ---
 
