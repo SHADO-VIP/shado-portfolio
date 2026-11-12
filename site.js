@@ -51,6 +51,12 @@ const projects = {
     problem: "The U.S. midterm results need context about which offices were contested and what the vote means.",
     build: "I developed an Arabic script, produced the narration, and edited footage and graphics into a vertical report."
   },
+  gazaWinter: {
+    title: "Gaza’s Winter of Cold and Fire",
+    file: "./assets/gaza-winter.mp4",
+    poster: "./assets/gaza-winter.webp",
+    videoIntro: "Music: The Long Dark by Scott Buckley (scottbuckley.com.au), CC BY 4.0."
+  },
   elNino: {
     title: "El Niño and the UAE Winter",
     file: "./assets/el-nino.mp4",
