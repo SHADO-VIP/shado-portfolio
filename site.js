@@ -51,6 +51,35 @@ const projects = {
     problem: "The U.S. midterm results need context about which offices were contested and what the vote means.",
     build: "I developed an Arabic script, produced the narration, and edited footage and graphics into a vertical report."
   },
+  nvidiaReturn: {
+    title: "Jensen Huang’s Return to NVIDIA",
+    file: "./assets/nvidia-return.mp4",
+    poster: "./assets/nvidia-return.webp"
+  },
+  futureApproaches: {
+    title: "The Future Is Getting Closer",
+    embed: "https://www.youtube-nocookie.com/embed/wn8DSwWYZ3I",
+    watch: "https://youtube.com/shorts/wn8DSwWYZ3I?si=iNVlWvC84NRKymX8",
+    portrait: true
+  },
+  anthropicReport: {
+    title: "Anthropic and the AI Wealth Boom",
+    embed: "https://www.youtube-nocookie.com/embed/wTsf_6j28bQ",
+    watch: "https://youtube.com/shorts/wTsf_6j28bQ?si=C6Mr6C6mwyttMGAq",
+    portrait: true
+  },
+  leadersSummit: {
+    title: "Trump, Xi and Putin: A Summit for Peace",
+    embed: "https://www.youtube-nocookie.com/embed/t_82MqY66Uk",
+    watch: "https://youtube.com/shorts/t_82MqY66Uk?si=jWktoL5FeOHfnXTD",
+    portrait: true
+  },
+  usOutages: {
+    title: "U.S. Outages and Conspiracy Theories",
+    embed: "https://www.youtube-nocookie.com/embed/mpKsE3xoglo",
+    watch: "https://youtube.com/shorts/mpKsE3xoglo?si=mTMcleSG3g3aGNk8",
+    portrait: true
+  },
   gazaWinter: {
     title: "Gaza’s Winter of Cold and Fire",
     file: "./assets/gaza-winter.mp4",
@@ -102,6 +131,7 @@ function openProject(button) {
   title.textContent = project.title;
   dialog.classList.toggle("video-dialog", videoMode);
   dialog.classList.toggle("landscape-dialog", videoMode && Boolean(project.landscape));
+  dialog.classList.toggle("portrait-dialog", videoMode && Boolean(project.portrait));
   content.replaceChildren();
 
   if (videoMode && project.videoIntro) {
@@ -128,7 +158,7 @@ function openProject(button) {
   if (videoMode) {
     const player = document.createElement("iframe");
     player.src = project.embed;
-    player.title = project.title + " walkthrough";
+    player.title = project.title + " video";
     player.allow = "encrypted-media; picture-in-picture";
     player.allowFullscreen = true;
     content.append(player, externalLink(project.watch, "Watch on YouTube", "player-link"));

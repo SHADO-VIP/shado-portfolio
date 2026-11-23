@@ -124,6 +124,10 @@ dialog.video-dialog{width:max-content}
 dialog video{display:block;max-height:calc(100dvh - 170px);width:auto;max-width:100%;margin:auto;background:black}
 dialog.landscape-dialog video{width:min(82vw,920px);height:auto}
 dialog iframe{display:block;width:min(72vw,800px);aspect-ratio:16/9;border:0}
+dialog.portrait-dialog{width:min(460px,calc(100vw - 24px))}
+dialog.portrait-dialog .dialog-inner{padding:24px 14px 18px}
+dialog.portrait-dialog .dialog-inner h2{font-size:clamp(23px,4vw,32px)}
+dialog.portrait-dialog iframe{width:min(100%,calc((100dvh - 210px)*9/16));aspect-ratio:9/16;margin-inline:auto}
 .case-copy{max-width:650px;color:#ded8ce}
 .case-copy p{margin:0 0 17px}
 .case-copy strong{color:#e5cda3}
